@@ -8,11 +8,13 @@
 import java.lang.Math;
 public class Die
 {
+    private int roll;
     /**
      * Constructor for objects of class Die
      */
     public Die()
     {
+        roll();
     }
 
     /**
@@ -23,6 +25,13 @@ public class Die
      */
     public int roll()
     {
-        return (int)(Math.random() * 6 +1); 
+        roll = (int)(Math.random() * 6 +1); 
+        return roll;
     }
+    
+    public int getRoll()
+    {
+        return roll;
+    }
+ 
 }
