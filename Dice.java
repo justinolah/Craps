@@ -45,5 +45,27 @@ public class Dice
          return d2.getRoll();
     }
     
+    public String toString()
+    {
+        String all = "";
+
+        all += "+----------+";
+        all += "+          +";
+        all += "+          +";
+        all += "+          +";
+        all += "+          +";
+        all += "+----------+";
+        all += "/n";
+        
+        all += "+----------+";
+        all += "+          +";
+        all += "+          +";
+        all += "+          +";
+        all += "+          +";
+        all += "+----------+";
+        
+        return all;
+    }
+    
     
 }

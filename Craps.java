@@ -27,7 +27,6 @@ public class Craps
                     System.out.println("You lost"); 
                 }
                 in.nextLine();
-
                 System.out.println("Do you want to play again? (Y/n)");
                 String answer = in.nextLine();
                 if (!answer.equals("") && !answer.substring(0,1).equalsIgnoreCase("y"))
