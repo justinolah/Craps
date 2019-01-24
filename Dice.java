@@ -19,6 +19,11 @@ public class Dice
         d2 = new Die();
     }
     
+    public int getSum()
+    {
+      return d1.getRoll() + d2.getRoll();  
+      }
+    
     public int[] getRoll()
     {
         int[] result = {d1.getRoll(), d2.getRoll()};
@@ -29,6 +34,15 @@ public class Dice
     {
        d1.roll();
        d2.roll();
+    }
+    
+    public int getDieRoll(int i)
+    {
+        if (i == 1)
+        {
+           return d1.getRoll();
+        }
+         return d2.getRoll();
     }
     
     
