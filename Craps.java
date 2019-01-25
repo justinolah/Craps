@@ -42,6 +42,7 @@ public class Craps
     public static boolean turn(Scanner in, Dice dice)
     {
         dice.rollDice();
+        System.out.println(dice.toString());
         System.out.println("You rolled a " + dice.getDieRoll(1) + " and a " +dice.getDieRoll(2));
         int point = dice.getSum();
         if (point == 7 ||point == 11)
@@ -57,6 +58,7 @@ public class Craps
             System.out.println("Roll again");
             in.nextLine();
             dice.rollDice();
+            System.out.println(dice.toString());
             System.out.println("You rolled a " + dice.getDieRoll(1) + " and a " +dice.getDieRoll(2));
             if (dice.getSum() == 7)
             {

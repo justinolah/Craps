@@ -33,5 +33,62 @@ public class Die
     {
         return roll;
     }
+    
+    public String toString()
+    {
+        String all = "";
+        all += "+-------------+\n";
+        if (roll == 1)
+        {
+        all += "+             +\n";
+        all += "+             +\n";
+        all += "+      *      +\n";
+        all += "+             +\n";
+        all += "+             +\n";
+      }
+      else if (roll == 2)
+        {
+        all += "+             +\n";
+        all += "+   *         +\n";
+        all += "+             +\n";
+        all += "+          *  +\n";
+        all += "+             +\n";
+      }
+      else if (roll == 3)
+        {
+        all += "+             +\n";
+        all += "+      *      +\n";
+        all += "+      *      +\n";
+        all += "+      *      +\n";
+        all += "+             +\n";
+      }
+        else if (roll == 4)
+        {
+        all += "+             +\n";
+        all += "+  *       *  +\n";
+        all += "+             +\n";
+        all += "+  *       *  +\n";
+        all += "+             +\n";
+      }
+        else if (roll == 5)
+        {
+        all += "+             +\n";
+        all += "+  *       *  +\n";
+        all += "+      *      +\n";
+        all += "+  *       *  +\n";
+        all += "+             +\n";
+      }
+      else 
+        {
+        all += "+             +\n";
+        all += "+  *       *  +\n";
+        all += "+  *       *  +\n";
+        all += "+  *       *  +\n";
+        all += "+             +\n";
+      }
+    all += "+-------------+";
+        return all;
+        
+    }
  
 }

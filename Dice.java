@@ -48,22 +48,9 @@ public class Dice
     public String toString()
     {
         String all = "";
-
-        all += "+----------+";
-        all += "+          +";
-        all += "+          +";
-        all += "+          +";
-        all += "+          +";
-        all += "+----------+";
-        all += "/n";
-        
-        all += "+----------+";
-        all += "+          +";
-        all += "+          +";
-        all += "+          +";
-        all += "+          +";
-        all += "+----------+";
-        
+        all += d1.toString();
+        all += "\n";
+        all += d2.toString();
         return all;
     }
     
